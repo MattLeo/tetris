@@ -1,10 +1,10 @@
 import pygame
-from constants import BLOCK_SIZE, START_X, START_Y
+from tetris.constants import BLOCK_SIZE, START_X, START_Y
 
 
 class Block(pygame.sprite.Sprite):
     def __init__(self, x, y, color):
-        super().__init__()
+        super().__init__(self.containers)
         self.x = x
         self.y = y
         self.color = color
